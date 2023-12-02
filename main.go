@@ -14,6 +14,8 @@ type ClientList map[int]int
 
 var clients ClientList
 
+const maxPeers = 100
+
 func main() {
 	original_file, original_file_err := os.Open(original_file_name + ".csv")
 	if original_file_err != nil {
@@ -51,7 +53,7 @@ func main() {
 			avg := 0
 			minP := 16976116344130
 			maxP := 0
-			for i := 0; i < maxK; i++ {
+			for i := 0; i < maxK && i < maxPeers; i++ {
 				// cli, ok := clients[i]
 				// if !ok {
 				// 	newLine += "0,"
