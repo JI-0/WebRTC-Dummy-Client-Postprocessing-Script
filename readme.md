@@ -7,4 +7,5 @@ This is a postprocessing script application for the timestamp output of the [Web
 To use this script:
 1. Clone the repo.
 2. Place the source data file inside the repo directory.
-3. Run the script with `go run .`.
+3. Change the `maxPeers` variable if the test max peers was set to a different number.
+4. Run the script with `go run .`.
