@@ -15,5 +15,5 @@ jobs:
       uses: actions/checkout@v2      
 
     - name: Build
-      run: go build .
+      run: go build main.go
 
